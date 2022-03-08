@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  color: rgb(253, 251, 252);
+  font-family: "Montserrat", serif;
+  background-color: pink;
+}
+/* bouton de nouvelle citation  */
+button {
+  background-color: inherit;
+  color: rgb(14, 12, 12);
+  border: 2px solid white;
+  text-align: right;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+/* quand on y flotte la souris */
+button:hover {
+   background-color: pink;
+}
+.container {
+  margin: 0 auto;
+}
+/* la situation du cadrage */
+.cadrage {
+   position: absolute; 
+   top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  min-width: 600px;
+  margin: auto;
+   box-sizing: border-box; 
+  background-color: rgb(243, 129, 186);
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+/* situation de la ligne de change dans quelques secondes */
+ .ligne-de-change {
+  width: 0;
+  height: 5px;
+  background-color: rgb(250, 248, 248);
+} 
+/* déclaration des citations dans le html*/
+blockquote {
+  padding: 30px;
+  font-size: 1.4em;
+} 
+/* citation  */
+.quote {
+  font-family: "Crimson Text", serif;
+  font-style: italic;
+}
+/* auteur */
+.auteur {
+  font-size: 0.6em;
+  font-weight: lighter;
+  text-align: right;
+}
+
+/* Media screen */
+@media screen and (max-width: 460px) {
+  .cadrage {
+    min-width: 100%;
+  }
+
+  blockquote {
+    font-size: 1.1em;
+  }
+}
